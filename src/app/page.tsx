@@ -24,15 +24,15 @@ export default function Home() {
 
           <Image
             src={logo}
-            width={100}
-            height={100}
+            width={70}
+            height={70}
             alt="Picture of a JellyFish"
           />
 
-          <h1 className='header-title text-8xl font-extrabold text-center pt-16'>Jelly<span className='Fish'>Fish</span>Development.
+          <h1 className='header-title text-8xl font-extrabold text-center pt-16'>Jelly<span className='Fish'>Fish</span><br/>Development.
           </h1>
 
-          <p className='text-neutral-400 pt-5 font-normal'>Com você, somos capazes de moldar o futuro digital de forma inovadora e envolvente ✨</p>
+          <p className='text-foreground pt-5 font-normal'>Com você, somos capazes de moldar o futuro digital de forma inovadora e envolvente.</p>
 
           <div className='infinite-looper w-11/12'>
             <InfiniteLooper speed={25} direction="left">
@@ -43,8 +43,13 @@ export default function Home() {
 
           <div className='p-10'>
 
-            <button className='rounded-3xl border-2 px-20 py-5 btn1'>
-              <a href="#" className='text-white text-2xl font-extrabold'>Projetos</a>
+            <button className='projetos-botao rounded-3xl border px-8 py-3 backdrop-brightness-150 hover:backdrop-brightness-200  ease-in-out duration-300'>
+              <a href="#" className='text-white text-1xl font-bold backdrop-brightness-150 flex flex-cols-2 items-center gap-2'>
+                <div>Projetos</div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#ffffff" d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569z"></path></svg>
+                </div>
+              </a>
             </button>
 
           </div>
@@ -52,14 +57,14 @@ export default function Home() {
         </section>
 
         {/* screen 2 - projects */}
-        <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
-          <h3 className="text-5xl mt-20 leading-tight">Projetos<span className='Fish'>.</span></h3>
+        <section className='h-screen flex flex-col items-center font-extrabold'>
+          <h3 className="text-5xl leading-tight">Projetos<span className='Fish'>.</span></h3>
 
-          <h4 className="text-base text-white text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
+          <h4 className="text-base text-foreground text-center font-normal mb-8">Nossos últimos projetos realizados</h4>
 
           <div className='grid grid-cols-2 gap-16'>
 
-            <div className='hover:backdrop-blur-sm hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
+            <div className='hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
               <Image 
                 className='rounded-lg'
                 src={sdsWikiProject}
@@ -69,7 +74,7 @@ export default function Home() {
               />
             <p className='text-2xl p-3'>SDS Wiki</p>
 
-            <p className='font-normal p-3'>Site dinâmico e minimalista de busca e documentação sobre Software Defined Storage baseado em Astro, utilizando arquivos em markdown.</p>
+            <p className='font-normal p-3 text-foreground'>Site dinâmico e minimalista de busca e documentação sobre Software Defined Storage baseado em Astro, utilizando arquivos em markdown.</p>
 
             <div className='grid grid-cols-7 mt-5'>
               <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
@@ -130,7 +135,7 @@ export default function Home() {
                 alt="jm eletrica project"
                 />
               <p className='text-2xl p-3'>JM Elétrica</p>
-            <p className='font-normal p-3 mb-11'>Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.</p>
+            <p className='font-normal p-3 mb-11 text-foreground'>Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.</p>
 
             <div className='grid grid-cols-7 mt-5'>
               <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
@@ -184,8 +189,13 @@ export default function Home() {
 
           <div className='p-10'>
 
-            <button className='rounded-3xl border-2 px-20 py-5 btn1'>
-              <a href="#" className='text-white text-2xl font-extrabold'>Veja mais</a>
+            <button className='projetos-botao rounded-3xl border px-8 py-3 backdrop-brightness-150 hover:backdrop-brightness-200  ease-in-out duration-300'>
+              <a href="#" className='text-white text-1xl font-bold backdrop-brightness-150 flex flex-cols-2 items-center gap-2'>
+                <div>Veja mais</div>
+                <div className='arrow-right'>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#ffffff" d="m10 17l5-5l-5-5z"></path></svg>
+                </div>
+              </a>
             </button>
 
           </div>
@@ -200,7 +210,7 @@ export default function Home() {
                 <div className='m-10 font-normal text-xl grid'>
 
                 <div className='text-left'>
-                  <p className='w-7/12 xl:w-9/12 2xl:w-10/12'>Se você possui uma visão, nós oferecemos a ferramenta necessária para transformar suas ideias em realidade. Conecte-se a nós e embarque nessa jornada conjunta.
+                  <p className='w-7/12 xl:w-9/12 2xl:w-10/12 text-foreground'>Se você possui uma visão, nós oferecemos a ferramenta necessária para transformar suas ideias em realidade. Conecte-se a nós e embarque nessa jornada conjunta.
                   </p>
                 </div>
               </div>
@@ -258,8 +268,6 @@ export default function Home() {
         <section className='border-t color-border-footer'>
           <FooterMain/>
         </section>
-
-    <Texture />
 
     </>
   )
