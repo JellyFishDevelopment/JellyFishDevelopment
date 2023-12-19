@@ -205,9 +205,9 @@ export default function Home() {
         <section className='sm:pt-32 2xl:pt-0 flex flex-col items-center justify-center font-extrabold'>
           <div className='lets_work_logo backdrop-blur-sm backdrop-brightness-150 hover:text-primary ease-in-out duration-300 rounded-2xl border w-full 2xl:w-10/12'>
               <div className='m-10'>
-                <h1 className='text-3xl'>Vamos trabalhar juntos!</h1>
+                <h1 className='text-2xl'>Vamos trabalhar juntos!</h1>
               </div>
-                <div className='m-10 font-normal text-xl grid'>
+                <div className='m-10 font-normal grid'>
 
                 <div className='text-left'>
                   <p className='w-7/12 xl:w-9/12 2xl:w-10/12 text-foreground'>Se você possui uma visão, nós oferecemos a ferramenta necessária para transformar suas ideias em realidade. Conecte-se a nós e embarque nessa jornada conjunta.
