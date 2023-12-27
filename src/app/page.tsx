@@ -269,6 +269,8 @@ export default function Home() {
           <FooterMain/>
         </section>
 
+        <h5 className='text-center text-foreground pb-5'>© JellyFishDevelopment - All rights reserved.</h5>
+
     </>
   )
 }
